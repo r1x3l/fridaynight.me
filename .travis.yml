@@ -8,6 +8,7 @@ branches:
     - master # build master branch only
 script:
   - npm remove hexo-generator-index
+  - npm install hexo-pagination --save
   - hexo cache clean
   - hexo generate # generate static files
 deploy:
